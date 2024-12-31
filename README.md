@@ -1,5 +1,6 @@
 Spent 2024 Winter break hypothesizing and researching the current app development market.
 After a long time of looking at the many options, I decided to start with a simple Django backend, and React, which is not so simple to me.
+I have a lot of interest in developing software, but I wanted to explore this world of coding before I ignored it.
 
 Current objectives:
 - Create components for entries, days, calender
