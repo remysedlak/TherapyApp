@@ -3,7 +3,7 @@ import '../styles/Home.css';  // Import a CSS file for styling (make sure to cre
 
 const Home = ({ details }) => (
   <div>
-    <h1>Home Page</h1>
+    {/* I removed the header here btw*/}
     <div className="grid-container">
       {details.map((item, id) => (
         <div key={id} className="grid-item">

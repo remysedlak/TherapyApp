@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+
+/* Navbar Styling */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #FFFAE5; /* Light background color */
+  padding: 5px 0; /* Reduced vertical padding */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Space between logo and items */
+  align-items: center;  /* Vertically center the items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  border-bottom: 1px solid #ddd; /* Subtle border at the bottom */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin: 0 15px; /* Reduced space between items */
+}
+
+.navbar a {
+  color: #333; /* Dark text color for readability */
+  text-decoration: none;
+  font-size: 16px; /* Slightly smaller font size */
+  font-weight: 500; /* Slightly bolder font */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  padding: 5px 10px; /* Smaller padding around links */
+}
+
+.navbar a:hover {
+  color: #FF6F61; /* Coral color for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Logo styling */
+.logo {
+  margin-left: 20px; /* Space between logo and left edge */
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 25px; /* Smaller logo size */
+  width: auto;
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.logo:hover .logo-image {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+@media (max-width: 768px) {
+  /* Adjust navbar for smaller screens */
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack navbar items vertically on small screens */
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 5px 0; /* Space out items in the vertical layout */
+  }
+}

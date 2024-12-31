@@ -1,9 +1,11 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import axios from 'axios';
-import Calendar from './pages/Calendar.js';
+import Navbar from './components/Navbar.js'; // Import the Navbar component
+import Calendar from './pages/Calendar';
 import Home from './pages/Home';
-import About from './pages/About.js';
+import About from './pages/About';
 
 class App extends React.Component {
   state = { details: [] };
@@ -11,7 +13,7 @@ class App extends React.Component {
   componentDidMount() {
     // Fetch data from the backend API
     axios
-      .get('http://127.0.0.1:8000/') // Ensure this is the correct API URL
+      .get('http://127.0.0.1:8000/')
       .then((res) => {
         const data = res.data;
         this.setState({ details: data });
@@ -26,15 +28,8 @@ class App extends React.Component {
 
     return (
       <Router>
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/calendar">Calendar</Link></li>
-            <li><Link to="/about">About</Link></li>
-          </ul>
-        </nav>
+        <Navbar />  {/* Use Navbar here */}
         <Routes>
-          {/* Passing `details` as props to each component */}
           <Route path="/" element={<Home details={details} />} />
           <Route path="/calendar" element={<Calendar entries={details} />} />
           <Route path="/about" element={<About />} />
