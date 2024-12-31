@@ -12,3 +12,6 @@ Current objectives:
 
 ![image](https://github.com/user-attachments/assets/35b8a5e7-eeb7-4149-86e2-8be0be9ec45e)
 
+![image](https://github.com/user-attachments/assets/05af24f1-da5a-4d66-8e49-d59fee17f7c7)
+
+
