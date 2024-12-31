@@ -1,0 +1,23 @@
+/* Grid layout for displaying journal entries */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Makes the grid responsive */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .grid-item div {
+    margin-bottom: 10px;
+  }
+  
+  .grid-item strong {
+    color: #333;
+  }
+  

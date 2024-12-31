@@ -6,7 +6,9 @@ from . models import *
 class DaysSerializer(serializers.ModelSerializer):
     class Meta:
         model = Days
-        fields =  ['date', 'mood_color', 'journal_entry']
+        fields =  fields =  ['date', 'content', 'mood_color', 'proper_nutrition', 'proper_hydration',
+            'hydration_amount', 'proper_exercise', 'exercise_duration', 'exercise_description',
+            'hours_of_sleep']
 
 class MoodColorsSerializer(serializers.ModelSerializer):
     class Meta:
