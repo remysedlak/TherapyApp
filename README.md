@@ -4,6 +4,8 @@ After a long time of looking at the many options, I decided to start with a simp
 I don't have a lot of front end knowledge, I've made static pages with html and css, but haven't got into js.
 I am actively learning about how components, controllers, routers, and interactivity works with websites.
 
+Working on this when I can.
+
 12/30/2024
 
 
@@ -16,5 +18,8 @@ I am actively learning about how components, controllers, routers, and interacti
 1/2/2025
 
 ![image](https://github.com/user-attachments/assets/66d62035-5984-4cb1-8365-6bc17db7dee4)
+
+![image](https://github.com/user-attachments/assets/51cb60a9-0c73-4ea3-8bcc-cf57203eae04)
+
 
 
