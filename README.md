@@ -11,9 +11,10 @@ I am actively learning about how components, controllers, routers, and interacti
 
 ![image](https://github.com/user-attachments/assets/05af24f1-da5a-4d66-8e49-d59fee17f7c7)
 
-![image](https://github.com/user-attachments/assets/c1136c3a-ab6d-409c-86af-a24d83774910)
+
 
 1/2/2025
 
-![image](https://github.com/user-attachments/assets/589c825f-50e4-4791-9955-364ae4751980)
+![image](https://github.com/user-attachments/assets/66d62035-5984-4cb1-8365-6bc17db7dee4)
+
 
