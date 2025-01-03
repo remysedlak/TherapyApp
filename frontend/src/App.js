@@ -5,6 +5,7 @@ import axios from 'axios';
 import Navbar from './components/Navbar.js'; // Import the Navbar component
 import Calendar from './pages/Calendar';
 import Home from './pages/Home';
+import Entry from './pages/Entry.js';
 import About from './pages/About';
 
 class App extends React.Component {
@@ -12,8 +13,10 @@ class App extends React.Component {
 
   componentDidMount() {
     // Fetch data from the backend API
+    axios.defaults.withCredentials = true;
+
     axios
-      .get('http://127.0.0.1:8000/')
+      .get('http://127.0.0.1:8000/api/days', { withCredentials: true })
       .then((res) => {
         const data = res.data;
         this.setState({ details: data });
@@ -31,6 +34,7 @@ class App extends React.Component {
         <Navbar />  {/* Use Navbar here */}
         <Routes>
           <Route path="/" element={<Home details={details} />} />
+          <Route path="/entry" element={<Entry details={details} />} />
           <Route path="/calendar" element={<Calendar entries={details} />} />
           <Route path="/about" element={<About />} />
         </Routes>

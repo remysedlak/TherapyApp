@@ -9,8 +9,8 @@ class MoodColors(models.TextChoices):
     NEUTRAL = "#808080", _("Neutral")    # Gray
 
 class Days(models.Model):
-    date = models.DateField(unique=True)  # Ensures each date is unique
-    content = models.TextField(blank=True, null=True)  # Main journal content
+    entry_date = models.DateField(unique=True)  # Ensures each date is unique
+    entry_content = models.TextField(blank=True, null=True)  # Main journal content
     mood_color = models.CharField(
         max_length=7,  # HEX color code length
         choices=MoodColors.choices,

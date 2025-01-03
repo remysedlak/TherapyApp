@@ -1,7 +1,11 @@
-from rest_framework import generics
+from rest_framework import generics, viewsets
+from rest_framework.response import Response
 
-from .models import Days
-from .serializers import DaysSerializer
+from .models import Days, MoodColors
+from .serializers import DaysSerializer, MoodColorsSerializer
+from django.http import JsonResponse
+
+
 
 class DaysItemView(generics.ListCreateAPIView):
     queryset = Days.objects.all()
@@ -14,11 +18,9 @@ class DaysItemView(generics.ListCreateAPIView):
             queryset = queryset.filter(date=date)
         return queryset
 
-from . models import MoodColors
-from . serializers import MoodColorsSerializer
 
-class MoodColorsItemView(generics.ListCreateAPIView):
-    def get(self, request):
-        # Use TextChoices to return mood options
-        mood_choices = [{"mood": mood.label, "color_code": mood.value} for mood in MoodColors]
-        return Response(mood_choices)
+def mood_colors(request):
+    # Create a list of mood colors in the format that frontend expects
+    choices = [{"value": color[0], "label": color[1]} for color in MoodColors.choices]
+    return JsonResponse({"mood_colors": choices})
+

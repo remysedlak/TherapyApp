@@ -1,7 +1,7 @@
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #FFFAE5; /* Light background color */
+    background-color: #f5f5f5; /* Light background color */
     padding: 5px 0; /* Reduced vertical padding */
     z-index: 1000;
     display: flex;
