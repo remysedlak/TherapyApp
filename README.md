@@ -1,14 +1,10 @@
 Spent 2024 Winter break hypothesizing and researching the current app development market.
-After a long time of looking at the many options, I decided to start with a simple Django backend, and React, which is not so simple to me.
-I have a lot of interest in developing software, but I wanted to explore this world of coding before I ignored it.
+After a long time of looking at the many options, I decided to start with a simple Django backend, and React.
 
 I don't have a lot of front end knowledge, I've made static pages with html and css, but haven't got into js.
-So far its not as scary as I thought it looked, but theres a lot to learn.
+I am actively learning about how components, controllers, routers, and interactivity works with websites.
 
-Current objectives:
-- Create components for entries, days, calender
-- Create proper navigation and routing between pages
-- Extend backend to have more API features
+Working on this when I can.
 
 12/30/2024
 
@@ -17,5 +13,13 @@ Current objectives:
 
 ![image](https://github.com/user-attachments/assets/05af24f1-da5a-4d66-8e49-d59fee17f7c7)
 
-![image](https://github.com/user-attachments/assets/c1136c3a-ab6d-409c-86af-a24d83774910)
+
+
+1/2/2025
+
+![image](https://github.com/user-attachments/assets/66d62035-5984-4cb1-8365-6bc17db7dee4)
+
+![image](https://github.com/user-attachments/assets/51cb60a9-0c73-4ea3-8bcc-cf57203eae04)
+
+
 
