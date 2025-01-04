@@ -30,6 +30,10 @@ I am actively learning about how **components**, **controllers**, **routers**, a
 ![image](https://github.com/user-attachments/assets/51cb60a9-0c73-4ea3-8bcc-cf57203eae04)  
 *Image of backend progress with Django routing and API calls*
 
+![image](https://github.com/user-attachments/assets/c5492869-f54c-48a6-9517-f3d462dcc084)
+*Image of frontend reworking using Material UI and Primereact imports*
+
+
 ---
 
 ## Future Goals
